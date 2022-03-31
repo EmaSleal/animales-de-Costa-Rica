@@ -1,0 +1,139 @@
+:root{
+    --primario: #70964c;
+    --primarioosc: #58753c;
+    --secundario: #FFCE00;
+    --secundariopsc: #ffcc00bd;
+    --blanco: #FFF;
+    --negro: #000;
+    --gris: #757575;
+    --fuentePrincipal: 'Lato', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    /*background-color: var(--primario);*/
+    
+    background-image: url("../img/fondo.jpeg");
+    
+
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+    color: var(--secundario);
+    gap: 2rem;
+}
+
+.activo{
+    color: var(--blanco);
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--primario);
+}
+
+.titulo h1{
+    margin-top: 2.5rem;
+}
+
+.header__logo{
+    margin-top: 2.5rem;
+    margin-right: 1rem;
+}
+
+h1, h2, h3{
+    text-align: center;
+    color: var(--secundario);
+    font-family: var(--fuentePrincipal);
+
+}
+
+.grid{
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.animal{
+    background-color:var(--primarioosc);
+    justify-content: center;
+    border-radius: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+
+.animal img{
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.animal a :hover{
+    background-color: var(--primario);
+}
+
+/*                                  ENLACE*/
+
+.enlaces{
+    background-color: var(--primario);
+    justify-content: center;
+    text-align: center;
+    margin: 2rem 4rem 2rem 4rem ;
+    border-color: var(--primarioosc);
+    border-radius: 0.5rem;
+}
+
+/*                                  FOOTER*/
+footer{
+    background-color: var(--primario);
+    margin-top: 2rem;
+    text-align: right;
+    gap: 1rem;
+}
+
+
+/*                                  nosotros*/
+
+.principal{
+    background-color: var(--primarioosc);
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--blanco);
+}
+
+.arbol{
+    width: 100%;
+    margin-top: 7rem;
+}
+
+/*                                  formulario*/
+
+.formulario{
+    
+    font-size: 1.6rem;
+    box-sizing: inherit;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    background-color: var(--primarioosc);
+    width: 60%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.campos{
+    margin-top: 2rem;
+}
